@@ -1,0 +1,28 @@
+/* ==========================================================================
+   Gallery Sass
+   ========================================================================== */
+
+#sidebar-gallery
+ width: 500px
+ background-image: url(../img/labelmodel.jpg)
+ background-size: cover
+ background-position: center
+ position: fixed
+ top: 0
+ left: 0
+ height: 100vh
+ z-index: 999
+ // background: #7386D5
+ color: #fff
+ transition: all 0.3s
+
+ //MEDIAQUERIES
+@media (max-width: 768px)
+  #sidebar-gallery
+   margin-left: -500px
+
+  #sidebar-gallery.active
+   margin-left: 0
+
+  #sidebarCollapse span
+   display: none

@@ -9,7 +9,6 @@
   background: #000;
   color: #fff;
   text-align: center;
-  margin-bottom: 50px;
   padding-bottom: 20px; }
 
 .light {
@@ -28,6 +27,10 @@
   padding: 0 10px 0 20px;
   margin: 0 10px 0 40px; }
 
+.stats {
+  margin-top: 55px;
+  margin-bottom: 60px; }
+
 .bg-dark {
   background-color: #000 !important; }
 
@@ -43,6 +46,18 @@
   border: none; }
   .btn-dark:hover {
     background-color: #000; }
+
+.footer {
+  height: 100%;
+  margin-top: 40px;
+  border-top: 0.25px solid #EFEFF0; }
+
+.copyrights {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+  color: #EFEFF0;
+  padding-top: 30px; }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -152,6 +167,31 @@ a.article, a.article:hover {
 
   #content.active {
     width: calc(100% - 460px); }
+
+  #sidebarCollapse span {
+    display: none; } }
+/* ==========================================================================
+ * Gallery Sass
+ * ========================================================================== */
+#sidebar-gallery {
+  width: 500px;
+  background-image: url(../img/labelmodel.jpg);
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 999;
+  color: #fff;
+  transition: all 0.3s; }
+
+@media (max-width: 768px) {
+  #sidebar-gallery {
+    margin-left: -500px; }
+
+  #sidebar-gallery.active {
+    margin-left: 0; }
 
   #sidebarCollapse span {
     display: none; } }
