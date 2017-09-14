@@ -169,7 +169,10 @@ a.article, a.article:hover {
     width: calc(100% - 460px); }
 
   #sidebarCollapse span {
-    display: none; } }
+    display: none; }
+
+  .aboutme {
+    margin-left: 10px; } }
 /* ==========================================================================
  * Gallery Sass
  * ========================================================================== */
@@ -191,6 +194,58 @@ a.article, a.article:hover {
     margin-left: -500px; }
 
   #sidebar-gallery.active {
+    margin-left: 0; }
+
+  #sidebarCollapse span {
+    display: none; } }
+/* ==========================================================================
+ * Contact Sass
+ * ========================================================================== */
+input, textarea {
+  text-indent: 15px; }
+
+.contact-form {
+  margin-top: 60px; }
+
+.form-control {
+  color: #dddddd;
+  font-weight: 300;
+  background-color: #fbfafa;
+  border-color: #fff;
+  line-height: 2.65;
+  font-size: 0.75rem; }
+  .form-control:focus {
+    border-color: red; }
+
+.send {
+  color: #ddd;
+  border: none;
+  font-size: 20px;
+  float: right;
+  margin-bottom: 30px;
+  background-color: #fbfafa; }
+  .send:hover {
+    color: #999;
+    background-color: #EFEFF0; }
+
+#sidebar-contact {
+  width: 500px;
+  background-image: url(../img/africanmodel.jpg);
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 999;
+  color: #fff;
+  transition: all 0.3s; }
+
+@media (max-width: 768px) {
+  #sidebar-contact {
+    margin-left: -500px; }
+
+  #sidebar-contact.active {
     margin-left: 0; }
 
   #sidebarCollapse span {
